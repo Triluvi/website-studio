@@ -196,15 +196,23 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 }
 .intro h2 { max-width: 900px; margin: 0 auto; font-size: clamp(2.8rem, 5vw, 4.8rem); }
 .intro p { max-width: 650px; margin: 24px auto 0; color: var(--muted); line-height: 1.9; }
-.projects { padding-block: 100px 118px; background: var(--white); }
+.projects { padding-block: 100px 118px; background: #f0f0e9; }
 .sectionhead { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin-bottom: 42px; }
+.sectionhead .label {
+  display: inline-block;
+  padding: 9px 12px;
+  border: 1px solid #d3d7c5;
+  background: #e5e8dc;
+  color: #59614b;
+  border-radius: 2px;
+  letter-spacing: .15em;
+}
 .sectionhead h2 { margin: 13px 0 0; font-size: clamp(3rem, 5.4vw, 5.4rem); }
 .sectionhead p { max-width: 300px; margin: 0 0 7px; color: var(--muted); font-size: .88rem; }
 .projectgrid { display: grid; grid-template-columns: 1.08fr .92fr; align-items: start; gap: 32px; }
 .project:nth-child(2) { margin-top: 112px; }
-.projectvisual { position: relative; height: 480px; overflow: hidden; background: #dedbd1; }
-.project:nth-child(2) .projectvisual { height: 350px; }
-.projectvisual img { filter: saturate(.88); transition: transform .6s; }
+.projectvisual { position: relative; height: 420px; overflow: hidden; background: #dedbd1; }
+.projectvisual img { width: 100%; height: 100%; object-fit: cover; display: block; filter: saturate(.84); transition: transform .6s; }
 .project:hover .projectvisual img { transform: scale(1.035); }
 .projectvisual::after { position: absolute; inset: 0; border: 1px solid rgb(32 36 31 / 7%); content: ""; pointer-events: none; }
 .projectmeta { display: flex; justify-content: space-between; gap: 16px; margin-top: 15px; padding-top: 16px; border-top: 1px solid var(--line); }
@@ -250,8 +258,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   .hero h1 { font-size: clamp(4.4rem, 8vw, 6.4rem); line-height: .98; }
   .heroimage { min-height: 460px; }
   .intro { padding-block: 76px; }
-  .projectvisual { height: 390px; }
-  .project:nth-child(2) .projectvisual { height: 300px; }
+  .projectvisual { height: 360px; }
   .manifesto { padding-block: 82px; }
   .manifestoimage { height: 430px; }
   .contactinner { gap: 25px; }
@@ -278,7 +285,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   .sectionhead p { margin-top: 17px; }
   .projectgrid { grid-template-columns: 1fr; gap: 34px; }
   .project:nth-child(2) { margin-top: 0; }
-  .projectvisual, .project:nth-child(2) .projectvisual { height: clamp(270px, 82vw, 420px); }
+  .projectvisual { height: clamp(270px, 82vw, 420px); }
   .manifesto { grid-template-columns: 1fr; gap: 30px; padding-block: 65px 72px; }
   .manifestoimage { height: clamp(280px, 90vw, 410px); grid-row: 2; }
   .manifesto h2 { font-size: clamp(3.1rem, 12vw, 4.2rem); }

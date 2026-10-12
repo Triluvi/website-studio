@@ -32,6 +32,57 @@
  .hero-meta{margin-top:34px}
 }
 
+
+/* Hero-Layout mit echter, gestalteter Website-Vorschau */
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(300px,.92fr);column-gap:clamp(28px,4vw,58px);align-items:center}
+.hero .eyebrow,.hero h1,.hero p,.hero .actions{grid-column:1;max-width:100%;position:relative;z-index:2}
+.hero .eyebrow{justify-self:start}
+.hero h1{font-size:clamp(3rem,5.1vw,5.2rem);margin:23px 0 20px}
+.hero p{font-size:1.05rem;line-height:1.75;margin-bottom:24px}
+.hero-preview{grid-column:2;grid-row:1 / span 4;align-self:center;position:relative;min-width:0;padding:10px;border:1px solid rgba(139,208,255,.25);border-radius:19px;background:linear-gradient(145deg,rgba(25,44,65,.96),rgba(8,15,25,.98));box-shadow:0 30px 80px rgba(0,0,0,.36),0 0 60px rgba(64,155,255,.1);transform:perspective(1200px) rotateY(-3deg);overflow:hidden}
+.preview-browser{height:30px;display:flex;align-items:center;gap:5px;padding:0 7px 9px;color:#8da5be;font-size:.58rem}
+.preview-browser>span:not(.preview-menu){width:6px;height:6px;border-radius:50%;background:#526a83}
+.preview-url{margin-left:9px;flex:1;text-align:center;padding:3px 10px;border:1px solid #2b4056;border-radius:5px;color:#a7bdd2}
+.preview-browser .preview-menu{font-size:.8rem}
+.preview-page{position:relative;min-height:340px;overflow:hidden;padding:17px 17px 12px;border:1px solid rgba(193,219,243,.16);border-radius:10px;background:linear-gradient(135deg,#e8e6df 0%,#d5d6d0 48%,#bfc9c9 100%);color:#18252b}
+.preview-nav{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:.53rem;letter-spacing:.09em;border-bottom:1px solid rgba(24,37,43,.22);padding-bottom:12px;position:relative;z-index:2}
+.preview-nav strong{font-size:.76rem;letter-spacing:-.03em}
+.preview-nav span{font-size:.46rem;letter-spacing:.08em}
+.preview-copy{position:relative;z-index:3;width:72%;padding-top:29px}
+.preview-kicker{font-size:.5rem;letter-spacing:.16em;font-weight:800;color:#526c6b}
+.preview-copy h2{font-size:clamp(2rem,3.6vw,3.4rem);line-height:.9;letter-spacing:-.075em;margin:13px 0}
+.preview-copy h2 em{font-family:Georgia,serif;font-weight:400;color:#547b7c}
+.preview-copy p{font-size:.66rem;line-height:1.5;color:#465458;max-width:190px;margin:0 0 17px}
+.preview-link{display:inline-flex;gap:15px;align-items:center;border-bottom:1px solid #263a3d;padding-bottom:5px;font-size:.5rem;font-weight:850;letter-spacing:.06em}
+.preview-link b{font-size:.8rem}
+.preview-art{position:absolute;right:0;bottom:31px;width:54%;height:62%;overflow:hidden;background:linear-gradient(145deg,#aab8b1,#d6d7ce 54%,#8fa4a0);border-radius:100px 100px 0 0}
+.art-window{position:absolute;left:12%;top:10%;width:42%;height:44%;border:5px solid rgba(244,240,224,.82);background:linear-gradient(135deg,#8ea6a8,#d7d7c9)}
+.art-sun{position:absolute;right:13%;top:13%;width:34%;aspect-ratio:1;border-radius:50%;background:#d7b98d}
+.art-table{position:absolute;bottom:18%;left:4%;width:90%;height:8%;background:#7a6250;transform:skewY(-8deg);box-shadow:0 8px 0 rgba(61,65,57,.12)}
+.art-vase{position:absolute;z-index:2;bottom:26%;left:36%;width:17%;height:27%;border-radius:35% 35% 43% 43%;background:linear-gradient(90deg,#8e9d91,#d3c5a8,#8e9d91)}
+.art-plant{position:absolute;z-index:2;bottom:30%;right:9%;width:4px;height:35%;background:#536b5b;transform:rotate(12deg)}
+.art-plant:before,.art-plant:after{content:"";position:absolute;width:25px;height:10px;border-radius:100% 0 100% 0;background:#6e8875;transform:rotate(-35deg);left:-20px;top:10px}
+.art-plant:after{top:27px;left:0;transform:rotate(30deg)}
+.preview-bottom{position:absolute;z-index:4;left:17px;right:17px;bottom:12px;display:flex;justify-content:space-between;font-size:.46rem;letter-spacing:.09em;color:#465458}
+.preview-caption{display:flex;align-items:center;gap:7px;padding:12px 4px 2px;font-size:.52rem;letter-spacing:.1em;color:#c4d5e7}
+.preview-caption>span:last-child{margin-left:auto;color:#8198b0;font-size:.46rem}
+.preview-live-dot{width:6px;height:6px;border-radius:50%;background:#8bdcff;box-shadow:0 0 9px #8bdcff}
+.hero .hero-meta{grid-column:1 / -1;grid-row:auto;position:relative;z-index:2;width:100%;max-width:none;justify-content:center;flex-wrap:wrap;gap:clamp(16px,4vw,55px);margin-top:42px;padding:20px 12px;border-top:1px solid rgba(151,193,235,.15);border-bottom:1px solid rgba(151,193,235,.15)}
+.hero .hero-meta span{display:flex;align-items:center;gap:10px}
+.hero .hero-meta b{display:grid;place-items:center;width:32px;height:32px;border:1px solid rgba(139,208,255,.35);border-radius:50%;color:var(--blue);font-size:.78rem}
+@media(max-width:800px){
+ .hero{padding-top:60px;padding-bottom:38px}
+ .hero .wrap{display:flex;flex-direction:column;align-items:stretch;gap:0}
+ .hero .eyebrow{align-self:flex-start}
+ .hero h1{font-size:clamp(2.8rem,10.5vw,4.6rem);margin:22px 0 18px}
+ .hero p{font-size:1.04rem;margin-bottom:22px}
+ .hero-preview{width:100%;max-width:510px;align-self:center;margin:32px 0 0;transform:none}
+ .preview-page{min-height:320px}
+ .preview-copy{padding-top:27px}
+ .hero .hero-meta{align-items:flex-start;gap:13px;margin-top:30px;padding:20px 0;flex-direction:column}
+}
+@media(max-width:420px){.preview-page{min-height:285px;padding:13px}.preview-copy{padding-top:22px}.preview-copy h2{font-size:2.05rem}.preview-art{width:52%;height:58%}.preview-caption{font-size:.45rem}.preview-caption>span:last-child{font-size:.4rem}}
+
 </style>
 </head>
 <body>
@@ -48,6 +99,16 @@
   <h1 data-de="Dein nächster<br>Auftritt. <span class='accent'>Weiter<br>gedacht.</span>" data-en="Your next<br>website. <span class='accent'>One step<br>ahead.</span>">Dein nächster<br>Auftritt. <span class="accent">Weiter<br>gedacht.</span></h1>
   <p data-de="Wir gestalten moderne Websites, die dein Unternehmen klar präsentieren und aus Besuchern Anfragen machen. Smarte KI-Workflows treffen auf durchdachtes Design – mit persönlicher Betreuung, auch nach dem Launch." data-en="We create modern websites that present your business clearly and turn visitors into enquiries. Smart AI workflows meet thoughtful design—with personal support long after launch.">Wir gestalten moderne Websites, die dein Unternehmen klar präsentieren und aus Besuchern Anfragen machen. Smarte KI-Workflows treffen auf durchdachtes Design – mit persönlicher Betreuung, auch nach dem Launch.</p>
   <div class="actions"><a class="btn" href="#contact"><span data-de="Projekt besprechen" data-en="Discuss your project">Projekt besprechen</span><span aria-hidden="true">↗</span></a><a class="btn ghost" href="#work"><span data-de="Konzepte entdecken" data-en="Explore concepts">Konzepte entdecken</span><span aria-hidden="true">↓</span></a></div>
+  <div class="hero-preview" aria-label="Beispiel einer gestalteten Unternehmenswebsite">
+    <div class="preview-browser"><span></span><span></span><span></span><div class="preview-url">nordform.studio</div><span class="preview-menu">☰</span></div>
+    <div class="preview-page">
+      <div class="preview-nav"><strong>NORD / FORM</strong><span>RÄUME · OBJEKTE · IDEEN</span></div>
+      <div class="preview-copy"><span class="preview-kicker">INTERIOR DESIGN STUDIO</span><h2>Räume mit<br><em>Haltung.</em></h2><p>Reduzierte Ästhetik. Natürliche Materialien. Zeitloses Design.</p><span class="preview-link">PROJEKTE ENTDECKEN <b>↗</b></span></div>
+      <div class="preview-art" aria-hidden="true"><div class="art-window"></div><div class="art-sun"></div><div class="art-vase"></div><div class="art-table"></div><div class="art-plant"></div></div>
+      <div class="preview-bottom"><span>SELECTED WORKS — 2026</span><span>01 / 04</span></div>
+    </div>
+    <div class="preview-caption"><span class="preview-live-dot"></span> WEBSITE-KONZEPT <span>DESIGN · STRUKTUR · RESPONSIVE</span></div>
+  </div>
   <div class="hero-meta"><span><b>01</b><span data-de="Individuelles Design" data-en="Custom design">Individuelles Design</span></span><span><b>02</b><span data-de="Für Mobilgeräte optimiert" data-en="Mobile-ready">Für Mobilgeräte optimiert</span></span><span><b>03</b><span data-de="Laufende Betreuung möglich" data-en="Ongoing support available">Laufende Betreuung möglich</span></span></div>
 </div></section>
 <section class="section" id="services"><div class="wrap">

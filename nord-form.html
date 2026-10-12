@@ -210,9 +210,22 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .values { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 34px; padding-top: 20px; border-top: 1px solid var(--line); }
 .values strong { display: block; font-family: var(--serif); font-size: 1.45rem; font-weight: 400; }
 .values span { color: var(--muted); font-size: .72rem; }
-.services { padding-block: 96px 108px; background: #e8e6de; }
-.serviceshead { display: flex; justify-content: space-between; align-items: end; margin-bottom: 34px; }
-.serviceshead h2 { margin: 12px 0 0; font-size: clamp(3rem, 5vw, 4.8rem); }
+.services {
+  padding-block: 104px 116px;
+  border-top: 1px solid var(--line);
+  background: linear-gradient(180deg, #f0f0e9 0%, var(--paper) 100%);
+}
+.serviceshead { display: block; margin-bottom: 42px; text-align: center; }
+.serviceshead .label { color: var(--olive-dark); letter-spacing: .18em; }
+.serviceshead .label::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 1px;
+  margin: 0 10px 4px 0;
+  background: #aab18f;
+}
+.serviceshead h2 { max-width: 900px; margin: 18px auto 0; font-size: clamp(2.8rem, 5vw, 4.8rem); }
 .servicegrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid #c9c7bd; }
 .service { min-width: 0; padding: 24px 25px 20px 0; border-bottom: 1px solid #c9c7bd; transition: background .25s; }
 .service + .service { padding-left: 25px; border-left: 1px solid #c9c7bd; }
@@ -272,7 +285,8 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   .manifestoimage { height: clamp(280px, 90vw, 410px); grid-row: 2; }
   .manifesto h2 { font-size: clamp(3.1rem, 12vw, 4.2rem); }
   .services { padding-block: 62px 70px; }
-  .serviceshead h2 { font-size: clamp(3rem, 11vw, 4rem); }
+  .serviceshead { margin-bottom: 29px; }
+  .serviceshead h2 { font-size: clamp(2.8rem, 11vw, 4rem); }
   .servicegrid { grid-template-columns: 1fr; }
   .service, .service + .service { padding: 21px 0; border-left: 0; }
   .service h3 { margin: 12px 0 7px; }

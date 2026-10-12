@@ -90,6 +90,13 @@
 .hero h1,.hero p,.hero .eyebrow,.hero .actions{max-width:100%!important}
 .hero h1{max-width:930px!important}
 
+
+/* Hero-Headline: groß, zweizeilig und über die volle Breite */
+.hero .hero-title{width:100%;max-width:none!important;font-size:clamp(3.8rem,9.2vw,8.6rem);line-height:.98;letter-spacing:-.065em;margin:30px 0 30px;text-wrap:balance}
+.hero .wrap:before,.hero .wrap:after,.hero-preview{display:none!important}
+.hero .wrap{display:block!important}
+.hero .hero-title,.hero p,.hero .eyebrow,.hero .actions{max-width:100%!important}
+@media(max-width:800px){.hero .hero-title{font-size:clamp(2.7rem,10.5vw,5rem);line-height:1.02;letter-spacing:-.05em}}
 </style>
 </head>
 <body>
@@ -103,7 +110,7 @@
 <main id="top">
 <section class="hero"><div class="wrap">
   <div class="eyebrow"><span class="dot"></span><span data-de="Webdesign · KI-gestützt · persönlich" data-en="Web design · AI-powered · personal">Webdesign · KI-gestützt · persönlich</span></div>
-  <h1 data-de="Dein nächster<br>Auftritt. <span class='accent'>Weiter<br>gedacht.</span>" data-en="Your next<br>website. <span class='accent'>One step<br>ahead.</span>">Dein nächster<br>Auftritt. <span class="accent">Weiter<br>gedacht.</span></h1>
+  <h1 class="hero-title" data-de="Dein nächster Auftritt.<br><span class='accent'>Weiter gedacht.</span>" data-en="Your next website.<br><span class='accent'>One step ahead.</span>">Dein nächster Auftritt.<br><span class="accent">Weiter gedacht.</span></h1>
   <p data-de="Wir gestalten moderne Websites, die dein Unternehmen klar präsentieren und aus Besuchern Anfragen machen. Smarte KI-Workflows treffen auf durchdachtes Design – mit persönlicher Betreuung, auch nach dem Launch." data-en="We create modern websites that present your business clearly and turn visitors into enquiries. Smart AI workflows meet thoughtful design—with personal support long after launch.">Wir gestalten moderne Websites, die dein Unternehmen klar präsentieren und aus Besuchern Anfragen machen. Smarte KI-Workflows treffen auf durchdachtes Design – mit persönlicher Betreuung, auch nach dem Launch.</p>
   <div class="actions"><a class="btn" href="#contact"><span data-de="Projekt besprechen" data-en="Discuss your project">Projekt besprechen</span><span aria-hidden="true">↗</span></a><a class="btn ghost" href="#work"><span data-de="Konzepte entdecken" data-en="Explore concepts">Konzepte entdecken</span><span aria-hidden="true">↓</span></a></div>
   <div class="hero-preview" aria-label="Beispiel einer gestalteten Unternehmenswebsite">

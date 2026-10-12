@@ -166,14 +166,36 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   background: var(--white); font-size: .61rem; letter-spacing: .13em; text-transform: uppercase;
 }
 .intro {
-  display: grid; grid-template-columns: .65fr 1.35fr; gap: 8%;
-  padding-block: 104px 116px; border-top: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 24px;
+  padding-block: 104px 116px;
+  border-top: 1px solid var(--line);
+  text-align: center;
+  background: linear-gradient(180deg, #f0f0e9 0%, var(--paper) 100%);
+}
+.intro > div:first-child {
+  display: flex;
+  justify-content: center;
+}
+.intro .label {
+  color: var(--olive-dark);
+  letter-spacing: .18em;
+}
+.intro .label::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 1px;
+  margin: 0 10px 4px 0;
+  background: #aab18f;
 }
 .intro h2, .sectionhead h2, .manifesto h2, .serviceshead h2, .contact h2 {
   font-family: var(--serif); font-weight: 400; letter-spacing: -.05em; line-height: 1.06; text-wrap: balance;
 }
-.intro h2 { max-width: 820px; margin: 0; font-size: clamp(2.8rem, 5vw, 4.8rem); }
-.intro p { max-width: 590px; margin: 24px 0 0; color: var(--muted); line-height: 1.9; }
+.intro h2 { max-width: 900px; margin: 0 auto; font-size: clamp(2.8rem, 5vw, 4.8rem); }
+.intro p { max-width: 650px; margin: 24px auto 0; color: var(--muted); line-height: 1.9; }
 .projects { padding-block: 100px 118px; background: var(--white); }
 .sectionhead { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin-bottom: 42px; }
 .sectionhead h2 { margin: 13px 0 0; font-size: clamp(3rem, 5.4vw, 5.4rem); }

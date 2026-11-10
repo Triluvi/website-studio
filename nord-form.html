@@ -12,8 +12,8 @@
   --paper: #f5f3ed;
   --white: #fcfbf7;
   --line: #d7d5cb;
-  --olive: #747b61;
-  --olive-dark: #59614b;
+  --blue: #647f9a;
+  --blue-dark: #405d78;
   --serif: Georgia, "Times New Roman", serif;
   --sans: Arial, Helvetica, sans-serif;
 }
@@ -31,8 +31,8 @@ body {
 a { color: inherit; text-decoration: none; }
 img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .wrap { width: min(1320px, calc(100% - 80px)); margin-inline: auto; }
-::selection { background: #d8ddc9; color: var(--ink); }
-:focus-visible { outline: 2px solid var(--olive); outline-offset: 4px; }
+::selection { background: #dce6ee; color: var(--ink); }
+:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
 .nav {
   min-height: 88px;
   display: flex;
@@ -45,7 +45,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .logo span { display: block; margin-top: 5px; color: var(--muted); font-size: .55rem; font-weight: 500; letter-spacing: .22em; }
 .navlinks { display: flex; align-items: center; gap: clamp(16px, 2.5vw, 32px); font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; }
 .navlinks a:not(.contact) { padding-block: 10px; transition: color .2s; }
-.navlinks a:not(.contact):hover { color: var(--olive); }
+.navlinks a:not(.contact):hover { color: var(--blue); }
 .navlinks .contact {
   display: inline-flex; align-items: center; justify-content: center;
   padding: 12px 17px; border: 1px solid var(--ink); background: var(--ink); color: var(--paper);
@@ -72,7 +72,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 }
 .eyebrow, 
 .eyebrow, .label {
-  color: var(--olive-dark); font-size: .67rem; font-weight: 700;
+  color: var(--blue-dark); font-size: .67rem; font-weight: 700;
   letter-spacing: .18em; text-transform: uppercase;
 }
 .hero h1 {
@@ -87,7 +87,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 }
 .hero h1 .hero-accent {
   display: block;
-  color: #737d58;
+  color: #496b8a;
   font-style: italic;
   padding: .08em 0 .18em .02em;
 }
@@ -95,7 +95,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   max-width: 390px;
   margin: 0 0 30px;
   padding-left: 17px;
-  border-left: 2px solid #aab18f;
+  border-left: 2px solid #b5c6d5;
   color: #565b50;
   font-size: 1rem;
   line-height: 1.85;
@@ -113,7 +113,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .linkline span {
   display: inline-flex;
   align-items: center;
-  color: var(--olive-dark);
+  color: var(--blue-dark);
   font-size: .95rem;
   line-height: 1;
   transform: translateY(-1px);
@@ -122,7 +122,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .linkline:hover span {
   transform: translate(4px, -1px);
 }
-.contact .linkline span { color: #d8ddc9; }
+.contact .linkline span { color: #dce6ee; }
 .heroimage {
   position: relative;
   min-height: 570px;
@@ -136,7 +136,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   right: -18px;
   bottom: 18px;
   left: 18px;
-  background: #dfe2d2;
+  background: #dce5ec;
   content: "";
 }
 .heroimage img {
@@ -166,7 +166,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   justify-content: center;
 }
 .intro .label {
-  color: var(--olive-dark);
+  color: var(--blue-dark);
   letter-spacing: .18em;
 }
 .intro .label::before {
@@ -175,7 +175,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   width: 24px;
   height: 1px;
   margin: 0 10px 4px 0;
-  background: #aab18f;
+  background: #b5c6d5;
 }
 .intro h2, .sectionhead h2, .manifesto h2, .serviceshead h2, .contact h2 {
   font-family: var(--serif); font-weight: 400; letter-spacing: -.05em; line-height: 1.06; text-wrap: balance;
@@ -189,7 +189,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   padding: 0;
   border: 0;
   background: transparent;
-  color: #59614b;
+  color: #405d78;
   letter-spacing: .15em;
 }
 .sectionhead h2 { margin: 13px 0 0; font-size: clamp(3rem, 5.4vw, 5.4rem); }
@@ -217,14 +217,14 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 }
 .serviceshead { display: block; margin-bottom: 42px; text-align: center; }
 .serviceshead > div { width: 100%; }
-.serviceshead .label { color: var(--olive-dark); letter-spacing: .18em; }
+.serviceshead .label { color: var(--blue-dark); letter-spacing: .18em; }
 .serviceshead .label::before {
   content: "";
   display: inline-block;
   width: 24px;
   height: 1px;
   margin: 0 10px 4px 0;
-  background: #aab18f;
+  background: #b5c6d5;
 }
 .serviceshead h2 { max-width: 900px; margin: 18px auto 0; font-size: clamp(2.8rem, 5vw, 4.8rem); }
 .servicegrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
@@ -232,21 +232,21 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .service + .service { position: relative; }
 .service + .service::before { position: absolute; top: 27px; left: 0; width: 1px; height: 68px; background: #d7d5cb; content: ""; }
 .service:hover { background: rgb(255 255 255 / 18%); }
-.service .num { color: var(--olive-dark); font-size: .64rem; letter-spacing: .14em; }
+.service .num { color: var(--blue-dark); font-size: .64rem; letter-spacing: .14em; }
 .service h3 { margin: 23px 0 9px; font-family: var(--serif); font-size: 1.75rem; font-weight: 400; }
 .service p { max-width: 310px; margin: 0 auto; color: var(--muted); font-size: .86rem; line-height: 1.8; }
-.contact { padding-block: 112px 100px; background: #272d25; color: #f4f2ea; }
+.contact { padding-block: 112px 100px; background: #202d3b; color: #f4f2ea; }
 .contactinner { display: grid; grid-template-columns: minmax(0, 1fr) minmax(320px, 440px); align-items: center; gap: clamp(36px, 6vw, 90px); }
-.contact .label { color: #c3c9ae; }
+.contact .label { color: #b9cbdc; }
 .contact h2 { margin: 18px 0; font-size: clamp(3.5rem, 6.7vw, 6.5rem); }
 .contact p { max-width: 485px; color: #c5c9c0; line-height: 1.9; }
 .contactpanel { padding: 28px; border: 1px solid rgb(244 242 234 / 20%); background: rgb(255 255 255 / 3%); }
-.contactpanel label { display: block; margin-bottom: 12px; color: #d9ddcf; font-size: .66rem; letter-spacing: .13em; text-transform: uppercase; }
+.contactpanel label { display: block; margin-bottom: 12px; color: #d5e0e9; font-size: .66rem; letter-spacing: .13em; text-transform: uppercase; }
 .contactpanel textarea { display: block; width: 100%; min-height: 145px; resize: vertical; padding: 15px; border: 1px solid rgb(244 242 234 / 24%); border-radius: 0; outline-offset: 3px; background: rgb(0 0 0 / 10%); color: #f4f2ea; font: inherit; line-height: 1.7; }
 .contactpanel textarea::placeholder { color: #aeb3a7; }
-.contactpanel textarea:focus { outline: 1px solid #c3c9ae; }
-.contactpanel button { display: inline-flex; align-items: center; gap: 5px; margin-top: 16px; padding: 0 0 8px; border: 0; border-bottom: 1px solid #c3c9ae; background: transparent; color: #f4f2ea; cursor: pointer; font: inherit; font-size: .69rem; letter-spacing: .1em; text-transform: uppercase; }
-.contactpanel button span { display: inline-flex; align-items: center; justify-content: center; color: #c3c9ae; line-height: 1; transform: translateY(-.5px); }
+.contactpanel textarea:focus { outline: 1px solid #b9cbdc; }
+.contactpanel button { display: inline-flex; align-items: center; gap: 5px; margin-top: 16px; padding: 0 0 8px; border: 0; border-bottom: 1px solid #b9cbdc; background: transparent; color: #f4f2ea; cursor: pointer; font: inherit; font-size: .69rem; letter-spacing: .1em; text-transform: uppercase; }
+.contactpanel button span { display: inline-flex; align-items: center; justify-content: center; color: #b9cbdc; line-height: 1; transform: translateY(-.5px); }
 .contactdetails { margin-top: 25px; padding-top: 19px; border-top: 1px solid rgb(244 242 234 / 18%); }
 .contactdetails small { display: block; margin-bottom: 6px; color: #aeb3a7; font-size: .62rem; letter-spacing: .13em; text-transform: uppercase; }
 .contactdetails a { color: #f4f2ea; font-size: .9rem; text-underline-offset: 4px; }
@@ -324,10 +324,10 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 <body>
 <header class="wrap nav"><a class="logo" href="#top" aria-label="RAUMWERK – zurück zum Anfang">RAUMWERK<span>FLIESEN · BAD · INNENAUSBAU</span></a><nav class="navlinks"><a href="#studio">Studio</a><a href="#projekte">Projekte</a><a href="#leistungen">Leistungen</a><a class="contact" href="#kontakt">Anfragen</a></nav></header>
 <main id="top">
-<section class="wrap hero"><div class="herotext"><div class="eyebrow">Fliesen · Badsanierung · Innenausbau</div><h1>Handwerk,<br><span class="hero-accent">das bleibt.</span></h1><p>Wir gestalten Bäder und Wohnräume mit hochwertigen Fliesen, sauberen Übergängen und echter Sorgfalt – von der ersten Idee bis zum letzten Detail.</p><a class="linkline" href="#projekte">Arbeiten entdecken <span>→</span></a></div><div class="heroimage"><img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1400&q=85" alt="Modernes Badezimmer mit hochwertigen Fliesen und klaren Linien" fetchpriority="high"><div class="image-label">01 / Wohnen mit Ruhe</div></div></section>
+<section class="wrap hero"><div class="herotext"><div class="eyebrow">Fliesen · Badsanierung · Innenausbau</div><h1>Handwerk,<br><span class="hero-accent">das bleibt.</span></h1><p>Wir gestalten Bäder und Wohnräume mit hochwertigen Fliesen, sauberen Übergängen und echter Sorgfalt – von der ersten Idee bis zum letzten Detail.</p><a class="linkline" href="#projekte">Arbeiten entdecken <span>→</span></a></div><div class="heroimage"><img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1400&q=85" alt="Modernes Badezimmer mit hochwertigen Fliesen und klaren Linien" fetchpriority="high"><div class="image-label">01 / Badmodernisierung</div></div></section>
 <section class="wrap intro" id="studio"><div><div class="label">Unser Anspruch</div></div><div><h2>Gutes Handwerk sieht man. Und man merkt es jeden Tag.</h2><p>RAUMWERK steht als Konzeptbetrieb für hochwertige Fliesenarbeiten, moderne Badsanierungen und durchdachten Innenausbau. Wir verbinden langlebige Materialien, präzise Ausführung und klare Beratung – zuverlässig und sorgfältig bis ins Detail.</p></div></section>
-<section class="projects" id="projekte"><div class="wrap"><div class="sectionhead"><div><div class="label">Einblicke · Beispielprojekte</div><h2>Handwerk, das<br>den Unterschied macht.</h2></div><p>Ob neues Bad oder frischer Look für einzelne Räume: Wir planen sauber und setzen präzise um.</p></div><div class="projectgrid"><article class="project"><div class="projectvisual"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85" alt="Modernes Bad mit großformatigen Fliesen" loading="lazy"></div><div class="projectmeta"><div><h3>Bad in Natursteinoptik</h3><p>Badsanierung · Konzept</p></div></div></article><article class="project"><div class="projectvisual"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1000&q=85" alt="Zeitlos gestalteter Badbereich mit Naturmaterialien" loading="lazy"></div><div class="projectmeta"><div><h3>Präzisees Familienbad</h3><p>Fliesen · Bad · Konzept</p></div></div></article><article class="project"><div class="projectvisual"><img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1000&q=85" alt="Großzügiger Wohnbereich mit hochwertigem Bodenbelag" loading="lazy"></div><div class="projectmeta"><div><h3>Großformat im Wohnbereich</h3><p>Fliesenarbeiten · Konzept</p></div></div></article></div></div></section>
-<section class="wrap manifesto"><div class="manifestoimage"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1100&q=85" alt="Hochwertig gestalteter Innenraum mit langlebigen Oberflächen" loading="lazy"></div><div><div class="label">Sauber geplant. Präzise umgesetzt.</div><h2>Fliese. Fuge.<br>Perfektion.</h2><p>Wir setzen auf langlebige Materialien, fachgerechte Vorbereitung und präzise Verlegung. Denn ein gutes Ergebnis entsteht nicht nur durch schöne Fliesen, sondern durch Sorgfalt bei jedem Arbeitsschritt.</p><div class="values"><div><strong>01</strong><span>Langlebig</span></div><div><strong>02</strong><span>Präzise</span></div><div><strong>03</strong><span>Sauber</span></div></div></div></section>
+<section class="projects" id="projekte"><div class="wrap"><div class="sectionhead"><div><div class="label">Einblicke · Beispielprojekte</div><h2>Handwerk, das<br>den Unterschied macht.</h2></div><p>Ob neues Bad oder frischer Look für einzelne Räume: Wir planen sauber und setzen präzise um.</p></div><div class="projectgrid"><article class="project"><div class="projectvisual"><img src="https://www.credo-centar.hr/data/public/gallery/548/Mirage_100__Bathroom_2019_LY07_LY05_640893e310274.jpg" alt="Modernes Bad mit großformatigen Fliesen" loading="lazy"></div><div class="projectmeta"><div><h3>Walk-in-Dusche in Steinoptik</h3><p>Badsanierung · Konzept</p></div></div></article><article class="project"><div class="projectvisual"><img src="https://kupaona.hr/data/products/07221/large/the-color-grey-blue-mud-604x1208-1.jpg" alt="Zeitlos gestalteter Badbereich mit Naturmaterialien" loading="lazy"></div><div class="projectmeta"><div><h3>Modernes Familienbad</h3><p>Fliesen · Bad · Konzept</p></div></div></article><article class="project"><div class="projectvisual"><img src="https://cdn.shopify.com/s/files/1/2395/6385/files/ambiente-sospiro-capri-vento-ocean.jpg?v=1709188213" alt="Großzügiger Wohnbereich mit hochwertigem Bodenbelag" loading="lazy"></div><div class="projectmeta"><div><h3>Großformatige Bodenfliesen</h3><p>Fliesenarbeiten · Konzept</p></div></div></article></div></div></section>
+<section class="wrap manifesto"><div class="manifestoimage"><img src="https://m2.tilemountain.co.uk/media/catalog/product/cache/f8158826193ba5faa8b862a9bd1eb9e9/s/l/slate-way-blue-matt-porcelain-wall-and-floor-tile-bathroom-wall-2300.jpg" alt="Hochwertig gestalteter Innenraum mit langlebigen Oberflächen" loading="lazy"></div><div><div class="label">Sauber geplant. Präzise umgesetzt.</div><h2>Fliese. Fuge.<br>Perfektion.</h2><p>Wir setzen auf langlebige Materialien, fachgerechte Vorbereitung und präzise Verlegung. Denn ein gutes Ergebnis entsteht nicht nur durch schöne Fliesen, sondern durch Sorgfalt bei jedem Arbeitsschritt.</p><div class="values"><div><strong>01</strong><span>Langlebig</span></div><div><strong>02</strong><span>Präzise</span></div><div><strong>03</strong><span>Sauber</span></div></div></div></section>
 <section class="services" id="leistungen"><div class="wrap"><div class="serviceshead"><div><div class="label">Unsere Leistungen</div><h2>Vom ersten Aufmaß<br>bis zur fertigen Fläche.</h2></div></div><div class="servicegrid"><article class="service"><div class="num">01 / PLANUNG</div><h3>Bad- & Raumplanung</h3><p>Wir besprechen Wünsche, Maße und Materialien und entwickeln eine passende Lösung für dein Vorhaben.</p></article><article class="service"><div class="num">02 / FLIESEN</div><h3>Fliesenverlegung</h3><p>Wand- und Bodenfliesen, großformatige Platten und saubere Details – passend zum Raum und seiner Nutzung.</p></article><article class="service"><div class="num">03 / SANIERUNG</div><h3>Badsanierung</h3><p>Von der Modernisierung einzelner Bereiche bis zum neuen Bad – durchdacht geplant und sorgfältig umgesetzt.</p></article></div></div></section>
 <section class="contact" id="kontakt"><div class="wrap contactinner"><div><div class="label">Dein Projekt beginnt hier</div><h2>Lass uns über<br>dein Vorhaben<br>sprechen.</h2><p>Du planst ein neues Bad, möchtest Fliesen erneuern oder Wohnräume modernisieren? Schreib uns kurz, worum es geht – wir melden uns für ein unverbindliches Erstgespräch.</p></div><div class="contactpanel"><form id="contactform"><label for="message">Worum geht es bei deinem Projekt?</label><textarea id="message" name="message" placeholder="Beschreibe kurz dein Vorhaben, den Raum und deine Wünsche …" required></textarea><button type="submit">Anfrage vorbereiten <span>↗</span></button></form><div class="contactdetails"><small>Kontakt per E-Mail</small><a href="mailto:kontakt@raumwerk.de?subject=Anfrage%20RAUMWERK">kontakt@raumwerk.de</a></div></div></div></section>
 </main>

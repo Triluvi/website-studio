@@ -132,6 +132,11 @@
 /* Desktop: vier Projektkarten als klar erkennbare 2x2-Übersicht */
 @media(min-width:801px){.workgrid{grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch}.work{display:block;min-width:0}.work:nth-child(4){visibility:visible;display:block}}
 
+
+/* Mehr Luft zwischen Beschreibungstext und Button */
+.workgrid .fakecontent p{margin-bottom:30px}
+.workgrid .fakecontent .fakebutton{margin-top:auto}
+
 /* Projektkarten: saubere Flex-Struktur ohne Überlagerungen */
 .workgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch;gap:20px}
 .workgrid .work{box-sizing:border-box;display:flex;flex-direction:column;height:460px;min-height:460px;min-width:0;padding:26px}

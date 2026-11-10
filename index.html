@@ -132,23 +132,25 @@
 /* Desktop: vier Projektkarten als klar erkennbare 2x2-Übersicht */
 @media(min-width:801px){.workgrid{grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch}.work{display:block;min-width:0}.work:nth-child(4){visibility:visible;display:block}}
 
-/* Projektkarten: kompakter, ruhiger Aufbau mit gemeinsamer CTA-Linie */
-.workgrid{grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch;gap:20px}
-.workgrid .work{box-sizing:border-box;display:block;height:430px;min-height:430px;min-width:0;padding:26px}
-.workgrid .fakebar{box-sizing:border-box;min-height:40px;align-items:center}
-.workgrid .fakecontent{position:relative;box-sizing:border-box;display:block;width:100%;max-width:100%;height:300px;min-height:0;margin-top:32px;padding:0 0 58px}
+/* Projektkarten: saubere Flex-Struktur ohne Überlagerungen */
+.workgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch;gap:20px}
+.workgrid .work{box-sizing:border-box;display:flex;flex-direction:column;height:460px;min-height:460px;min-width:0;padding:26px}
+.workgrid .fakebar{box-sizing:border-box;flex:0 0 auto;min-height:40px;align-items:center}
+.workgrid .fakecontent{position:static;box-sizing:border-box;display:flex;flex:1 1 auto;flex-direction:column;align-items:flex-start;width:100%;max-width:100%;height:auto;min-height:0;margin-top:30px;padding:0}
+.workgrid .fakecontent small{display:block}
 .workgrid .fakecontent h3{max-width:100%;margin:14px 0}
 .workgrid .fakecontent p{max-width:360px;margin:0;font-size:.94rem;line-height:1.65}
-.workgrid .fakecontent .fakebutton{position:absolute;left:0;bottom:0;margin:0;white-space:nowrap}
-.workgrid .workfoot{box-sizing:border-box;min-height:38px;align-items:center;left:26px;right:26px;bottom:18px;padding-top:10px;font-size:.76rem}
+.workgrid .fakecontent .fakebutton{position:static;display:inline-block;flex:0 0 auto;align-self:flex-start;margin-top:auto;padding:10px 14px;white-space:nowrap}
+.workgrid .workfoot{position:static;box-sizing:border-box;display:flex;flex:0 0 auto;min-height:38px;align-items:center;margin-top:22px;padding:10px 0 0;border-top:1px solid rgba(151,193,235,.2);font-size:.76rem}
 @media(max-width:800px){
   .workgrid{grid-template-columns:minmax(0,1fr);gap:16px}
-  .workgrid .work{height:390px;min-height:390px}
-  .workgrid .fakecontent{height:260px;margin-top:28px}
+  .workgrid .work{height:430px;min-height:430px;padding:24px}
+  .workgrid .fakecontent{margin-top:26px}
+  .workgrid .workfoot{margin-top:18px}
 }
 @media(max-width:420px){
-  .workgrid .work{padding:22px;height:400px;min-height:400px}
-  .workgrid .workfoot{left:22px;right:22px;font-size:.7rem}
+  .workgrid .work{height:420px;min-height:420px;padding:22px}
+  .workgrid .workfoot{font-size:.7rem}
   .workgrid .fakecontent p{font-size:.92rem}
 }
 </style>

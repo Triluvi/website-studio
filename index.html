@@ -109,6 +109,9 @@
 .workfoot{background:none;padding-top:18px;border-top:1px solid rgba(151,193,235,.2)}
 .fakebutton,.blue .fakebutton{display:inline-block;margin-top:12px;background:linear-gradient(135deg,#a5e6ff,#65b4ff);color:#07111d;border-radius:999px;padding:10px 14px;font-size:.78rem;font-weight:850;cursor:pointer;transition:transform .2s ease,filter .2s ease}.fakebutton:hover{transform:translateY(-2px);filter:brightness(1.08)}
 @media(max-width:800px){.fakecontent{margin-top:34px;padding-bottom:78px}.work{min-height:390px}}
+
+/* Desktop: vier Projektkarten als klar erkennbare 2x2-Übersicht */
+@media(min-width:801px){.workgrid{grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch}.work{display:block;min-width:0}.work:nth-child(4){visibility:visible;display:block}}
 </style>
 </head>
 <body>

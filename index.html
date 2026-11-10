@@ -172,8 +172,8 @@
 @media(hover:none){.workgrid a.work:hover{transform:none;filter:none}}
 
 /* 3D-Flip-Karten für die Projektübersicht */
-.workgrid .work-flip{height:460px;min-width:0;perspective:1200px}
-.workgrid .work-flip-inner{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .7s cubic-bezier(.2,.75,.25,1)}
+.workgrid .work-flip{height:460px;min-width:0;perspective:1200px;border-radius:22px}
+.workgrid .work-flip-inner{position:relative;width:100%;height:100%;border-radius:22px;transform-style:preserve-3d;transition:transform .7s cubic-bezier(.2,.75,.25,1)}
 .workgrid .work-flip:hover .work-flip-inner,.workgrid .work-flip:focus-within .work-flip-inner{transform:rotateY(180deg)}
 .workgrid .work-face,.workgrid .work-back{position:absolute;inset:0;box-sizing:border-box;width:100%;height:100%;margin:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:inherit}
 .workgrid .work-front{display:flex;flex-direction:column}

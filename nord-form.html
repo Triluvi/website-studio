@@ -251,10 +251,10 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .contactdetails small { display: block; margin-bottom: 6px; color: #aeb3a7; font-size: .62rem; letter-spacing: .13em; text-transform: uppercase; }
 .contactdetails a { color: #f4f2ea; font-size: .9rem; text-underline-offset: 4px; }
 .contactdetails a:hover { text-decoration: underline; }
-.footer { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding-block: 28px; color: var(--muted); font-size: .64rem; letter-spacing: .07em; text-transform: uppercase; }
+.footer { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 17px; padding-block: 30px 18px; color: var(--muted); font-size: .64rem; letter-spacing: .07em; text-align: center; text-transform: uppercase; }
 .footer a:hover { text-decoration: underline; text-underline-offset: 4px; }
-.footerlinks { display: flex; flex-wrap: wrap; gap: 20px; }
-.note { margin: 0; padding: 0 20px 18px; color: #77796f; font-size: .64rem; letter-spacing: .02em; text-align: center; }
+.footerlinks { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; }
+.note { margin: 0; padding: 0 20px 24px; color: #77796f; font-size: .64rem; letter-spacing: .02em; text-align: center; }
 @media (min-width: 1500px) {
   .hero { min-height: 700px; }
   .heroimage { min-height: 600px; }
@@ -306,7 +306,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   .contactinner { grid-template-columns: 1fr; gap: 30px; }
   .contact h2 { font-size: clamp(3.4rem, 14vw, 4.8rem); }
   .contactpanel { padding: 21px; }
-  .footer { align-items: flex-start; flex-direction: column; padding-block: 24px; }
+  .footer { align-items: center; padding-block: 24px 18px; }
 }
 @media (max-width: 360px) {
   .wrap { width: calc(100% - 32px); }
